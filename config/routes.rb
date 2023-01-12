@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'home#splash', as: 'splash'
   # get "/groups/:id", to: "groups#index"
-  resources :groups, only: [:index, :new]
+  resources :groups, only: [:index, :new, :create]
 
 end

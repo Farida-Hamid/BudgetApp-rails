@@ -1,2 +1,6 @@
-<h1>Group#new</h1>
-<p>Find me in app/views/group/new.html.erb</p>
+<h1>New Category</h1>
+<%= form_with model: @group, url: groups_path, method: :post, local: true, scope: group do |f| %>
+  <%= f.text_field :name, place_holder:'Name' %>
+  <%= f.text_field :icon %>
+  <%= f.submit 'Add Group' %>
+<% end %>
