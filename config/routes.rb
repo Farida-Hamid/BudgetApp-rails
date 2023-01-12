@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'payments/index'
-  get 'payments/new'
-  get 'payments/create'
+  # get 'payments/index'
+  # get 'payments/new'
+  # get 'payments/create'
+  get 'users/groups'
+  get 'users/operations'
   devise_for :users
 
   namespace :user do
@@ -9,6 +11,10 @@ Rails.application.routes.draw do
   end
 
   root 'home#splash', as: 'splash'
-  resources :groups, only: [:index, :new, :create]
+  resources :users, only: [ :index, :show] do
+    resources :groups, only: [:index, :new, :create] do
+      resources :payments, only: [:index, :new, :create]
+    end
+  end
 
 end

@@ -23,9 +23,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_11_140134) do
     t.index ["author_id"], name: "index_groups_on_author_id"
   end
 
-  create_table "payment_groups", force: :cascade do |t|
-    t.bigint "payment_id", null: false
-    t.bigint "group_id", null: false
+  create_table "payment_groups", id: false, force: :cascade do |t|
+    t.bigint "payment_id"
+    t.bigint "group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_payment_groups_on_group_id"
@@ -65,7 +65,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_11_140134) do
   end
 
   add_foreign_key "groups", "users", column: "author_id"
-  add_foreign_key "payment_groups", "groups"
-  add_foreign_key "payment_groups", "payments"
   add_foreign_key "payments", "users", column: "author_id"
 end
