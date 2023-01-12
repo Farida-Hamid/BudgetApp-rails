@@ -12,9 +12,8 @@ Rails.application.routes.draw do
 
   root 'home#splash', as: 'splash'
   resources :users, only: [ :index, :show] do
-    resources :groups, only: [:index, :new, :create] do
-      resources :payments, only: [:index, :new, :create]
-    end
+    resources :groups, only: [:index, :new, :create]
+    resources :payments, only: [:index, :new, :create]
   end
 
 end

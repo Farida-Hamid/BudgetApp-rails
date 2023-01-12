@@ -1,2 +1,11 @@
-<h1>Payments#index</h1>
-<p>Find me in app/views/payments/index.html.erb</p>
+<h1>Transactions</h1>
+  <%= @sum %>
+
+<% @payments.each do |payment| %>
+  <div>
+    <%= payment.name %>
+    <%= payment.amount%>
+  </div>
+<% end %>
+
+<%= link_to 'Add Payment', new_user_payment_path%>
