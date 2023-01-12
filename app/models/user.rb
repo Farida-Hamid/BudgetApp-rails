@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :confirmable, :trackable
+  before_save :skip_confirmation!
 
   has_many :groups, class_name: "Group", foreign_key: "author_id"
   has_many :payments, class_name: "Payment", foreign_key: "author_id"

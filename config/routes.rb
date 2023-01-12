@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
+  get 'group/index'
+  get 'group/new'
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  namespace :user do
+    root :to => "groups#index"
+  end
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'home#splash'
+  root 'home#splash', as: 'splash'
+  get "/groups/:id", to: "groups#index"
+  get '/users/sign_out'
 
 end
