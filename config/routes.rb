@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'payments/index'
+  get 'payments/new'
+  get 'payments/create'
   devise_for :users
 
   namespace :user do
