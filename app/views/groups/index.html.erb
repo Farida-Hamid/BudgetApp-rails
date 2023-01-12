@@ -1,3 +1,7 @@
-<h1>Group index</h1>
+<h1>Categories</h1>
+  <% @groups.each do |group| %>
+  <%= group.name %>
+  <image src="<%= (url_for(group.icon)) %>" class="icon" >
+<% end %>
 
 <%= link_to 'Add Category', new_group_url%>
