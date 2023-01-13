@@ -1,4 +1,6 @@
 <h1>Categories</h1>
+
+<% if can? :read, @groups %>
   <% @groups.each do |group| %>
     <%= link_to user_group_payments_path(current_user, group) do %>
       <%= group.name %>
@@ -7,4 +9,5 @@
     <% end %>
   <% end %>
 
-<%= link_to 'Add Category', new_user_group_path%>
+  <%= link_to 'Add Category', new_user_group_path%>
+<% end %>

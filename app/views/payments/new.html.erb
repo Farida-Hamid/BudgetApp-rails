@@ -1,14 +1,16 @@
 <h1>New Transaction</h1>
 <%= link_to '<', user_groups_path([:user_id])%>
 
-<%= form_with model: @payment, url: user_group_payments_path, method: :post, local: true, scope: payment, data: { turbo: false } do |f| %>
-  <%= f.text_field :name, placeholder:'Name', require: true %>
-  <%= f.number_field :amount, require: true %>
-  <% @groups.each do |group| %>
-    <div>
-      <%= f.label group.name %>
-      <%= check_box_tag '[groups][]', group.id %>
-    </div>
+<% if can? :manage, Payment %>
+  <%= form_with model: @payment, url: user_group_payments_path, method: :post, local: true, scope: payment, data: { turbo: false } do |f| %>
+    <%= f.text_field :name, placeholder:'Name', require: true %>
+    <%= f.number_field :amount, require: true %>
+    <% @groups.each do |group| %>
+      <div>
+        <%= f.label group.name %>
+        <%= check_box_tag '[groups][]', group.id %>
+      </div>
+    <% end %>
+    <%= f.submit 'Save' %>
   <% end %>
-  <%= f.submit 'Save' %>
 <% end %>
