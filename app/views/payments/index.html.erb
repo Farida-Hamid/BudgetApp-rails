@@ -1,5 +1,7 @@
 <h1>Transactions</h1>
-  <%= @sum %>
+<%= link_to '<', user_groups_path([:user_id])%>
+
+<%= @sum %>
 
 <% @payments.each do |payment| %>
   <div>
@@ -8,4 +10,4 @@
   </div>
 <% end %>
 
-<%= link_to 'Add Payment', new_user_group_payment_path%>
+<%= link_to 'Add Transaction', new_user_group_payment_path%>
