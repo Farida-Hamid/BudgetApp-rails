@@ -23,13 +23,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_11_140134) do
     t.index ["author_id"], name: "index_groups_on_author_id"
   end
 
-  create_table "payment_groups", id: false, force: :cascade do |t|
+  create_table "groups_payments", id: false, force: :cascade do |t|
     t.bigint "payment_id"
     t.bigint "group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["group_id"], name: "index_payment_groups_on_group_id"
-    t.index ["payment_id"], name: "index_payment_groups_on_payment_id"
+    t.index ["group_id"], name: "index_groups_payments_on_group_id"
+    t.index ["payment_id"], name: "index_groups_payments_on_payment_id"
   end
 
   create_table "payments", force: :cascade do |t|
