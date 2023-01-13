@@ -1,9 +1,18 @@
-.splash {
+body {
+  background-color: #f5f6f8;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .splash h1{
   font-family:'Apple Chancery';
   text-align: center;
@@ -27,4 +36,53 @@ a {
 .log {
   background-color: #3778c2;
   color: aliceblue;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  background-color: #3778c2;
+  color: aliceblue;
+  width: 100%;
+  height: 10%;
+}
+
+.header h2 {
+  margin: auto;
+  padding-top: 5%;
+}
+
+.submit {
+  background-color: #3778c2;
+  border: none;
+  color: aliceblue;
+  position: absolute;
+  right: 3%;
+  top:40%;
+}
+
+.register {
+  margin-top: 30%;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.field {
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 5%
+}
+
+hr {
+  margin: auto;
+}
+
+.line {
+  border-bottom: 2px solid #f5f6f8;
+  width: 90%;
+  margin:auto;
 }
