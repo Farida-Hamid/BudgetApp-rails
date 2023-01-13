@@ -2,5 +2,5 @@
 <%= form_with model: @group, url: user_groups_path, method: :post, local: true, scope: group do |f| %>
   <%= f.text_field :name, placeholder:'Group Name' %>
   <%= f.text_field :icon, placeholder:'Image URL' %>
-  <%= f.submit 'Add Group' %>
+  <%= f.submit 'Save' %>
 <% end %>
