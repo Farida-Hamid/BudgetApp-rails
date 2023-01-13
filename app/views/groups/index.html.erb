@@ -1,8 +1,10 @@
 <h1>Categories</h1>
   <% @groups.each do |group| %>
-    <%= group.name %>
-    <image src="<%= (url_for(group.icon)) %>" class="icon" >
-    <%= group.payments.sum(:amount) %>
+    <%= link_to user_group_payments_path(current_user, group) do %>
+      <%= group.name %>
+      <image src="<%= (url_for(group.icon)) %>" class="icon" >
+      <%= group.payments.sum(:amount) %>
+    <% end %>
   <% end %>
 
 <%= link_to 'Add Category', new_user_group_path%>
