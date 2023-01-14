@@ -16,10 +16,8 @@ class GroupsController < ApplicationController
     respond_to do |format|
       format.html do
         if group.save
-          flash[:success] = "Group saved successfully"
           redirect_to user_groups_path
         else
-          flash.now[:error] = "Error: Group could not be saved. Try again."
           render :new, locals: { group: @group }
         end
       end

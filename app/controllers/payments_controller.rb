@@ -22,10 +22,8 @@ class PaymentsController < ApplicationController
     respond_to do |format|
       format.html do
         if @payment.save
-          flash[:success] = "Transaction saved successfully"
           redirect_to user_groups_path(current_user)
         else
-          flash.now[:error] = "Error: Group could not be saved. Try again."
           render :new, locals: { payment: @payment }
         end
       end

@@ -5,14 +5,14 @@
 
 <div class='total'>
   <p>Total spending</p>
-  $<%= @sum %>
+  <h4>$<%= @sum %></h4>
 </div>
 
 <div class='transaction-cards'>
   <% @payments.each do |payment| %>
     <div class='card'>
-      <h3><%= payment.name %></h3>
-      $<%= payment.amount%>
+      <p><%= payment.name %></p>
+      <h4>$<%= payment.amount%></h4>
     </div>
   <% end %>
 </div>

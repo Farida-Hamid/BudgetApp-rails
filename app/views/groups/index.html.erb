@@ -7,9 +7,11 @@
     <% @groups.each do |group| %>
       <%= link_to user_group_payments_path(current_user, group) do %>
         <div class='card'>
-          <image src="<%= (url_for(group.icon)) %>" class="icon" >
-          <h3><%= group.name %></h3>
-          $<%= group.payments.sum(:amount) %>
+          <div class='card-info'>
+            <image src="<%= (url_for(group.icon)) %>" class="icon" >
+            <p><%= group.name %></p>
+          </div>
+          <h4>$<%= group.payments.sum(:amount) %></h4>
         </div>
 
         <% end %>

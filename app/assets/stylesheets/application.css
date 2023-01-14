@@ -102,8 +102,14 @@ hr {
   background-color: white;
   margin-bottom: 3%;
   align-items: center;
-  padding: 2%;
+  padding: 3%;
   color: #434b54;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 20px
 }
 
 .icon {
