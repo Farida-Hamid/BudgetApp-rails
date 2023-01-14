@@ -3,11 +3,11 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full Name", class: 'field' %>
   <div class='line'></div>
-  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: 'field'  %>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: 'field' %>
   <div class='line'></div>
-  <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class: 'field'  %>
+  <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class: 'field' %>
   <div class='line'></div>
-  <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: 'field'  %>
+  <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: 'field' %>
   <div class= "header">
     <h2>Register</h2>
     <%= f.submit "Next", class:'submit' %>
