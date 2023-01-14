@@ -4,7 +4,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #434b54;
 }
 
 h2 {
@@ -72,8 +72,8 @@ h2 {
 .field {
   border: none;
   width: 100%;
-  color: white;
-  padding: 5%
+  color: #434b54;
+  padding: 5%;
 }
 
 hr {
@@ -84,4 +84,11 @@ hr {
   border-bottom: 2px solid #f5f6f8;
   width: 90%;
   margin:auto;
+}
+
+.back {
+  color: aliceblue;
+  position: absolute;
+  left: 3%;
+  top:40%;
 }
