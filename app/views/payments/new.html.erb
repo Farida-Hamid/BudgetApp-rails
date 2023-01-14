@@ -1,0 +1,19 @@
+<% if can? :manage, Payment %>
+  <div class='register'>
+    <%= form_with model: @payment, url: user_group_payments_path, method: :post, local: true, scope: payment, data: { turbo: false } do |f| %>
+      <%= f.text_field :name, placeholder:'Name', require: true, class: 'field' %>
+      <%= f.number_field :amount, placeholder:'35', require: true, class: 'field' %>
+      <% @groups.each do |group| %>
+        <div class='groups'>
+          <%= f.label group.name %>
+          <%= check_box_tag '[groups][]', group.id %>
+        </div>
+      <% end %>
+      <div class= "header">
+        <h2>New Transaction</h2>
+        <%= link_to '<', user_groups_path([:user_id]), class: 'back' %>
+        <%= f.submit 'Save', class: 'submit' %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

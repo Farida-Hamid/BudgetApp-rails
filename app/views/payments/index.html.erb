@@ -1,0 +1,22 @@
+<div class= "header">
+  <h2>Transactions</h2>
+  <%= link_to '<', user_groups_path([:user_id]), class: 'back' %>
+</div>
+
+<div class='total'>
+  <p>Total spending</p>
+  <h4>$<%= @sum %></h4>
+</div>
+
+<div class='transaction-cards'>
+  <% @payments.each do |payment| %>
+    <div class='card'>
+      <p><%= payment.name %></p>
+      <h4>$<%= payment.amount%></h4>
+    </div>
+  <% end %>
+</div>
+
+<div class='add-container'>
+  <%= link_to 'Add Transaction', new_user_group_payment_path, class: 'add' %>
+</div>

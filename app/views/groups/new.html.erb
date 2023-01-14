@@ -1,0 +1,13 @@
+<% if can? :manage, Group %>
+  <div class='register'>
+    <%= form_with model: @group, url: user_groups_path, method: :post, local: true, scope: group do |f| %>
+      <%= f.text_field :name, placeholder:'Group Name', class: 'field' %>
+      <%= f.text_field :icon, placeholder:'Image URL', class: 'field' %>
+      <div class= "header">
+        <h2>New Category</h2>
+        <%= link_to '<', user_groups_path([:user_id]), class: 'back' %>
+        <%= f.submit 'Save', class: 'submit' %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
