@@ -57,7 +57,7 @@ h2 {
   border: none;
   color: aliceblue;
   position: absolute;
-  right: 3%;
+  right: 4%;
   top:40%;
 }
 
@@ -71,7 +71,7 @@ h2 {
 
 .field {
   border: none;
-  width: 100%;
+  width: 95%;
   color: #434b54;
   padding: 5%;
 }
@@ -89,8 +89,9 @@ hr {
 .back {
   color: aliceblue;
   position: absolute;
-  left: 3%;
+  left: 4%;
   top:40%;
+  font-size: large;
 }
 
 .card {
@@ -135,4 +136,8 @@ a.add {
   width: 100%;
   text-align: center;
   padding: 20px 0;
+}
+
+.groups {
+  padding: 4px 10px;
 }
