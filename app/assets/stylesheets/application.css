@@ -103,16 +103,16 @@ hr {
   margin-bottom: 3%;
   align-items: center;
   padding: 2%;
+  color: #434b54;
 }
 
 .icon {
   height: 80px;
   width: 80px;
-  color: #434b54;
 }
 
 .cards {
-  margin-top: 30%;
+  margin-top: 100px;
 }
 
 .add {
@@ -140,4 +140,20 @@ a.add {
 
 .groups {
   padding: 4px 10px;
+  color: #434b54;
+}
+
+.total {
+  margin-top: 18%;
+  background-color: white;
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #434b54;
+}
+
+.transaction-cards {
+  margin-top: 20px;
 }
