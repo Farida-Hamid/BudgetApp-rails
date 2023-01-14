@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'render/index'
   # get 'payments/index'
   # get 'payments/new'
   # get 'payments/create'
@@ -16,5 +17,5 @@ Rails.application.routes.draw do
       resources :payments, only: [:index, :new, :create]
     end
   end
-
+  # root 'render#index'end
 end

@@ -86,3 +86,5 @@ production:
   database: BudgetApp
   username: postgres
   password: BUDGETAPP_DATABASE_PASSWORD
+  url: <%= ENV['DATABASE_URL'] %>
+
