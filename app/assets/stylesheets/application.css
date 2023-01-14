@@ -1,5 +1,6 @@
 body {
   background-color: #f5f6f8;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -13,8 +14,8 @@ h2 {
   text-align: center;
 }
 
-.splash h1{
-  font-family:'Apple Chancery';
+.splash h1 {
+  font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive;
   text-align: center;
   margin-bottom: 50%;
   margin-top: 50%;
@@ -58,7 +59,7 @@ h2 {
   color: aliceblue;
   position: absolute;
   right: 4%;
-  top:40%;
+  top: 40%;
 }
 
 .register {
@@ -83,14 +84,14 @@ hr {
 .line {
   border-bottom: 2px solid #f5f6f8;
   width: 90%;
-  margin:auto;
+  margin: auto;
 }
 
 .back {
   color: aliceblue;
   position: absolute;
   left: 4%;
-  top:40%;
+  top: 40%;
   font-size: large;
 }
 
@@ -109,7 +110,7 @@ hr {
 .card-info {
   display: flex;
   align-items: center;
-  gap: 20px
+  gap: 20px;
 }
 
 .icon {

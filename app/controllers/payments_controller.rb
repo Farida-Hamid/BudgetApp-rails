@@ -1,6 +1,6 @@
 class PaymentsController < ApplicationController
   def index
-    @payments = current_user.groups.find(params[:group_id]).payments.order("created_at DESC")
+    @payments = current_user.groups.find(params[:group_id]).payments.order('created_at DESC')
     @sum = @payments.sum(:amount)
   end
 
@@ -31,6 +31,7 @@ class PaymentsController < ApplicationController
   end
 
   private
+
   def payment_params
     params.require(:payment).permit(:name, :amount).merge(user: current_user)
   end
