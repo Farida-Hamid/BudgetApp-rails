@@ -1,13 +1,22 @@
-<h1>Categories</h1>
+<div class= "header">
+  <h2>Categories</h2>
+</div>
 
 <% if can? :read, @groups %>
-  <% @groups.each do |group| %>
-    <%= link_to user_group_payments_path(current_user, group) do %>
-      <%= group.name %>
-      <image src="<%= (url_for(group.icon)) %>" class="icon" >
-      <%= group.payments.sum(:amount) %>
-    <% end %>
-  <% end %>
+  <div class='cards'>
+    <% @groups.each do |group| %>
+      <%= link_to user_group_payments_path(current_user, group) do %>
+        <div class='card'>
+          <image src="<%= (url_for(group.icon)) %>" class="icon" >
+          <h3><%= group.name %></h3>
+          $<%= group.payments.sum(:amount) %>
+        </div>
 
-  <%= link_to 'Add Category', new_user_group_path%>
+        <% end %>
+    <% end %>
+  </div>
+
+  <div class='add-container'>
+    <%= link_to 'Add Category', new_user_group_path, class: 'add' %>
+  </div>
 <% end %>

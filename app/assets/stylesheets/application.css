@@ -92,3 +92,47 @@ hr {
   left: 3%;
   top:40%;
 }
+
+.card {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 3%;
+  align-items: center;
+  padding: 2%;
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+  color: #434b54;
+}
+
+.cards {
+  margin-top: 30%;
+}
+
+.add {
+  border: white solid 1px;
+  border-radius: 3px;
+  color: white;
+  width: 75%;
+  margin: auto;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+a.add {
+  display: block;
+}
+
+.add-container {
+  position: fixed;
+  bottom: 0;
+  background-color: #5fb523;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
