@@ -1,4 +1,4 @@
-# 📖 Recipe_App <a name="about-project"></a>
+# 📖 Budet App <a name="about-project"></a>
 > This is a mobile web application where you can manage personal budget: you have a list of transactions associated with a category, so that you know how much you spent and on what.
 
 This is a Ruby on Rails application that allows the user to:
@@ -50,7 +50,7 @@ see the money spent on each category.
 
 ## 🚀 Live Version <a name="live-demo"></a>
 
-- [Check](https://budget-app-r6or.onrender.com)
+- [Check](https://budget-app-r0dc.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
