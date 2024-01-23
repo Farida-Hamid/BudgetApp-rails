@@ -50,7 +50,7 @@ see the money spent on each category.
 
 ## 🚀 Live Version <a name="live-demo"></a>
 
-- [Check](https://budget-app-r0dc.onrender.com)
+- [Check 📝](https://budget-app-r0dc.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
