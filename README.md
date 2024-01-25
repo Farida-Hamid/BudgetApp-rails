@@ -12,26 +12,12 @@ see the money spent on each category.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>BackEnd</summary>
-  <ul>
+  **BackEnd**
     <li><a href="https://railsguide.com/">Rails</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Test</summary>
-  <ul>
+  **Test**
     <li><a href="https://rspec.com/">RSPEC</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
+  **Database**
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
