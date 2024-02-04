@@ -11,12 +11,12 @@ see the money spent on each category.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-  **BackEnd:**
-        <li><a href="https://railsguide.com/">Rails</a></li>
-  **Test:**
-        <li><a href="https://rspec.com/">RSPEC</a></li>
-  **Database:**
-        <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  - **BackEnd:**
+    - <a href="https://railsguide.com/">Rails</a>
+  - **Test:**
+    - <a href="https://rspec.com/">RSPEC</a>
+  - **Database:**
+    - <a href="https://www.postgresql.org/">PostgreSQL</a>
 
 <!-- Features -->
 
